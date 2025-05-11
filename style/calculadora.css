@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background: linear-gradient(
+    150deg,
+    rgb(172, 99, 201) 12%,
+    rgba(77, 34, 150, 1) 16%,
+    rgba(65, 132, 137, 1) 33%,
+    rgba(47,23 ,99 , 1) 51%,
+    /*transparent,*/
+    rgba(31,13 ,65 , 1) 65%,
+    rgba(31,12 ,66 , 1) 100%
+      );
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+ 
+}
+
+
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.logo {
+  color: #ee13c4;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+.navbar ul li {
+  padding: 0 20px;
+  font-size: 20px;
+}
+.navbar ul li a {
+  color: #ffffff;
+  font-size: 20px;
+}
+.navbar ul li a:hover {
+  color: #ee13c4;
+  transition: 0.9s;
+}
+#menu {
+  display: none;
+}
+.menu-icon {
+  width: 25px;
+}
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+@media (max-width:991px) {
+    .menu {
+      padding: 20px;
+      position: relative;
+    }
+  
+    .menu label {
+      display: initial;
+    }
+    .menu .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      right: 0%;
+      background-color: #ee13c2;
+      display: none;
+    }
+    .menu .navbar ul {
+      flex-direction: column;
+      padding: 0 20px;
+      }
+      .menu .navbar ul li {
+          padding: 10px 0;
+         width: 100%;
+      }
+    .menu .navbar ul li a:hover {
+      color: #1f0c42;
+  } 
+      #menu:checked ~ .navbar {
+          display: initial;
+      }}
+
+.section{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.calculator{
+    background-color:#48bfff;
+    color: #ffffff;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    box-shadow: 0 0 20px #48bfff;
+}
+.display{
+    grid-column: 1 / 5;
+    background-color: #090c31;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-family: monospace;
+    font-weight: bold;
+}
