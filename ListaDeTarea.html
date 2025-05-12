@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lista de tareas</title>
+    <link rel="stylesheet" href="style/listadetareas.css">
 </head>
 <body>
-    
+    <header>
+        <div class="conteiner">
+            <div class="menu">
+                <a href="index.html" class="logo" >🏠</a>
+                <input type="checkbox" id="menu"/>
+                <label for="menu">
+                    <img src="images/menu.png" class="menu-icon" alt="esto es un menu" >
+                </label>
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li class="lista"><a href="index.html">Inicio</a></li>
+                        <li class="lista"><a href="calculadora.html">Calculadora</a></li>
+                        <li class="lista"><a href="ListaDeTarea.html">Lista de tareas</a></li>
+                    </ul>
+
+                </nav> 
+            </div> 
+        </div>
+    </header>
+   
+    <div class="contenedor-principal">
+        <h1>Lista De Tareas</h1>
+
+        <div class="contenedor">
+            
+            <input type="text" placeholder="Escriba la tarea" id="inputTarea" autofocus>
+            <button id="botonAdd"class="botonagregar">Agregar</button>
+       
+        </div>
+
+        <ul class="lista_de_tareas">
+         
+            
+           <!--  <li><label><input type="checkbox">Tareas</label><span class="delete">X</span></li> -->
+
+        </ul>
+
+    </div>
+
+
+
+
+  
+    <script src="tareas.js"></script>
 </body>
 </html>

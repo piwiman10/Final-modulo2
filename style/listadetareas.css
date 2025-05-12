@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+}
+
+
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.logo {
+  color: #ee13c4;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.navbar .nav-list {
+  display: flex;
+  align-items: center;
+}
+.navbar .nav-list .lista {
+  padding: 0 20px;
+  font-size: 20px;
+}
+.navbar .nav-list .lista a {
+  color: #ffffff;
+  font-size: 20px;
+}
+.navbar .nav-list .lista a:hover {
+  color: #ee13c4;
+  transition: 0.9s;
+}
+#menu {
+  display: none;
+}
+.menu-icon {
+  width: 25px;
+}
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+@media (max-width:991px) {
+    .menu {
+      padding: 20px;
+      position: relative;
+    }
+  
+    .menu label {
+      display: initial;
+    }
+    .menu .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      right: 0%;
+      background-color: #ee13c2;
+      display: none;
+    }
+    .menu .navbar .nav-list {
+      flex-direction: column;
+      padding: 0 20px;
+      }
+      .menu .navbar .nav-list .lista {
+          padding: 10px 0;
+         width: 100%;
+      }
+    .menu .navbar .nav-list .lista a:hover {
+      color: #1f0c42;
+  } 
+      #menu:checked ~ .navbar {
+          display: initial;
+      }}
+     
+      contenedor-principal{
+        background-color: black;
+        margin: 200px auto;
+        width: 500px;
+        border-radius: 10px;
+        
+    }
+    
+    h1{
+        text-align: center;
+        padding: 20px;
+        margin-top: 150px;
+        text-transform: capitalize;
+        color: white;
+    }
+    
+    .contenedor{
+        width: 450px;
+        display: flex;
+        padding: 20px;
+        margin: auto;
+      
+        justify-content:space-between;
+    }
+    
+    
+    .contenedor input[type="text"]{
+        padding: 10px;
+       font-size: 20px;
+       border-radius: 10px;
+       width: 280px;
+    }
+    
+    .contenedor .botonagregar{
+        padding: 10px 15px;
+       font-size: 20px;
+       cursor: pointer;
+       border-radius: 10px;
+    }
+    
+    .contenedor .botonagregar:hover{
+        background-color:black;
+        border: 1px solid white;
+        color: white;
+    }
+    
+    .lista_de_tareas{
+        list-style: none;
+        padding: 20px;
+        
+    }
+    
+    .lista_de_tareas li{
+       display: flex;
+       text-transform: capitalize;
+       border-radius: 10px;
+       background-color: rgb(207, 71, 244);
+       padding: 20px;
+       justify-content: space-between;
+    }
+    
+    .lista_de_tareas li input[type="checkbox"]{
+        width: 18px;
+        height: 18px;
+        align-items: center;
+        border-radius: 4px;
+        margin-right: 10px;
+     }
+    
+     .lista_de_tareas li{
+        font-size: 20px;
+        color: white;
+        margin-bottom: 10px;
+     }
+    
+     .lista_de_tareas li .delete{
+      cursor: pointer;
+    
+     }
+    
+     .lista_de_tareas li .delete:hover{
+        color: black;
+        
+       }
